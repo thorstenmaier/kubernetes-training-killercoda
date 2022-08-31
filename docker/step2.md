@@ -23,6 +23,8 @@ Sie können die Änderungen mit `CTRL-O` speichern. Mit `CTRL-X` beenden Sie den
 Bauen Sie anschließend das Docker-Image: `docker build -t my-apache .`
 Dieser Vorgang wird einige Zeit in Anspruch nehmen.
 
+Sie können sich nun mit `docker images` die Liste aller Images anzeigen lassen. Das Image `my-apache` sollte dort nun aufgeführt sein.
+
 Starten Sie nun einen Container mit diesem Image und geben Sie dabei den Port 80 frei:
 `docker run -d --name=my-apache -p 80:80 my-apache`
 
