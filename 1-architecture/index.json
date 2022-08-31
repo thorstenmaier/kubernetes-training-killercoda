@@ -1,14 +1,18 @@
 {
   "title": "1 - Kubernetes Architektur",
-  "description": "TODO",
+  "description": "In diesem Szenario lernen Sie die Architektur von Kubernetes kennen",
   "details": {
     "intro": {
       "text": "intro.md"
     },
     "steps": [
       {
-        "title": "Prozesse Controlplane",
+        "title": "Prozesse Master Node",
         "text": "step1.md"
+      },
+      {
+        "title": "Prozesse Worker Node",
+        "text": "step2.md"
       }
     ],
     "finish": {
