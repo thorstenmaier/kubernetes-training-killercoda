@@ -1,0 +1,21 @@
+{
+  "title": "1 - Kubernetes Architektur",
+  "description": "TODO",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Prozesse Controlplane",
+        "text": "step1.md"
+      }
+    ],
+    "finish": {
+      "text": "../common/finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  }
+}
