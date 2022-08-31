@@ -1,8 +1,10 @@
-`curl -o spring.zip "https://start.spring.io/starter.zip?type=maven-project&language=java&bootVersion=2.7.3&baseDir=demo&groupId=com.example&artifactId=demo&name=demo&description=Demo%20project%20for%20Spring%20Boot&packageName=com.example.demo&packaging=jar&javaVersion=17&dependencies=web"`{{exec}}
+`curl -o demo.zip "https://start.spring.io/starter.zip?type=maven-project&language=java&bootVersion=2.7.3&baseDir=demo&groupId=com.example&artifactId=demo&name=demo&description=Demo%20project%20for%20Spring%20Boot&packageName=com.example.demo&packaging=jar&javaVersion=17&dependencies=web"`{{exec}}
+
+`unzip demo.zip`{{exec}}
 
 `cd demo`{{exec}}
 
-`unzip spring.zip`{{exec}}
+`touch src/main/java/com/example/demo/MyController.java`{{exec}}
 
 `nano src/main/java/com/example/demo/MyController.java`{{exec}}
 
