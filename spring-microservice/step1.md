@@ -2,7 +2,7 @@
 
 `cd spring-service`{{exec}}
 
-`curl -o spring.zip https://start.spring.io/starter.zip?type=maven-project&language=java&bootVersion=2.7.3&baseDir=demo&groupId=com.example&artifactId=demo&name=demo&description=Demo%20project%20for%20Spring%20Boot&packageName=com.example.demo&packaging=jar&javaVersion=17&dependencies=web`{{exec}}
+`curl -o spring.zip "https://start.spring.io/starter.zip?type=maven-project&language=java&bootVersion=2.7.3&baseDir=demo&groupId=com.example&artifactId=demo&name=demo&description=Demo%20project%20for%20Spring%20Boot&packageName=com.example.demo&packaging=jar&javaVersion=17&dependencies=web"`{{exec}}
 
 `unzip spring.zip`{{exec}}
 
