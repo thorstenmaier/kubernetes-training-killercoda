@@ -1,0 +1,25 @@
+{
+  "title": "Docker Einführung",
+  "description": "In diesem Szenario lernen Sie die wichtigsten Grundkonzepte von Docker",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Container starten",
+        "text": "step1.md"
+      },
+      {
+        "title": "Image bauen und starten",
+        "text": "step2.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  }
+}
