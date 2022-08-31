@@ -1,25 +1,76 @@
-`curl -o demo.zip "https://start.spring.io/starter.zip?type=maven-project&language=java&bootVersion=2.7.3&baseDir=demo&groupId=com.example&artifactId=demo&name=demo&description=Demo%20project%20for%20Spring%20Boot&packageName=com.example.demo&packaging=jar&javaVersion=17&dependencies=web"`{{exec}}
+`curl -o demo.zip "https://start.spring.io/starter.zip?type=maven-project&language=java&bootVersion=2.7.3&baseDir=demo&groupId=com.example&artifactId=demo&name=demo&description=Demo%20project%20for%20Spring%20Boot&packageName=com.example.demo&packaging=jar&javaVersion=17&dependencies=web,data-jpa,h2,data-rest,data-rest-explorer"`{{exec}}
 
 `unzip demo.zip`{{exec}}
 
 `cd demo`{{exec}}
 
-`touch src/main/java/com/example/demo/MyController.java`{{exec}}
+`touch src/main/java/com/example/demo/Auto.java`{{exec}}
 
-`nano src/main/java/com/example/demo/MyController.java`{{exec}}
+`nano src/main/java/com/example/demo/Auto.java`{{exec}}
 
 ```java
 package com.example.demo;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
-@RestController
-public class MyController {
-        @GetMapping("/")
-        public String hello() {
-                return "Hello from Spring";
-        }
+@Entity
+public class Auto {
+
+    @Id
+    @GeneratedValue
+    private Long id;
+
+    private String marke;
+
+    private String modell;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getMarke() {
+        return marke;
+    }
+
+    public void setMarke(String marke) {
+        this.marke = marke;
+    }
+
+    public String getModell() {
+        return modell;
+    }
+
+    public void setModell(String modell) {
+        this.modell = modell;
+    }
+
+    @Override
+    public String toString() {
+        return "Auto{" +
+                "id=" + id +
+                ", marke='" + marke + '\'' +
+                ", modell='" + modell + '\'' +
+                '}';
+    }
+}
+```{{copy}}
+
+`touch src/main/java/com/example/demo/AutoRepository.java`{{exec}}
+
+`nano src/main/java/com/example/demo/AutoRepository.java`{{exec}}
+
+```java
+package com.example.demo;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface AutoRepository extends JpaRepository<Auto, Long> {
 }
 ```{{copy}}
 
@@ -36,3 +87,7 @@ sudo apt-get install bellsoft-java17
 `./mvnw package`{{exec}}
 
 `java -jar target/*.jar`{{exec}}
+
+{{TRAFFIC_HOST1_8080}}
+
+`./mvnw spring-boot:build-image`{{exec}}

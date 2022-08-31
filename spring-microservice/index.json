@@ -1,6 +1,6 @@
 {
   "title": "WIP Spring Microservice",
-  "description": "In diesem Szenario lernen Sie die wichtigsten Befehle von Docker kennen",
+  "description": "In diesem Szenario bauen Sie einen kleinen Microservice mit Spring Boot",
   "details": {
     "intro": {
       "text": "intro.md"
