@@ -6,6 +6,6 @@ Versuchen die Prozesse des Kubernetes Master Node zu finden:
 * kube-apiserver
 * kube-controller
 * kube-scheduler
-* Container-Runtime
+* Container-Runtime (containerd)
 
 Sie können top mit der Tastenkombination `CTRL+C` beenden.
