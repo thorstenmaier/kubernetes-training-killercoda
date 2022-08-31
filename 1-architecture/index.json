@@ -12,7 +12,7 @@
       }
     ],
     "finish": {
-      "text": "../common/finish.md"
+      "text": "finish.md"
     }
   },
   "backend": {
