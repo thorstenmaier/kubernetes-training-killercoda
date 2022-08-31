@@ -7,16 +7,8 @@
     },
     "steps": [
       {
-        "title": "Container starten",
+        "title": "TODO",
         "text": "step1.md"
-      },
-      {
-        "title": "Image bauen und starten",
-        "text": "step2.md"
-      },
-      {
-        "title": "Aufräumen",
-        "text": "step3.md"
       }
     ],
     "finish": {
