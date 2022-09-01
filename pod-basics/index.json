@@ -1,5 +1,5 @@
 {
-  "title": "Pod Basis",
+  "title": "Pod Basics",
   "description": "Erstellen Sie Pods und lernen Sie wie diese kontrolliert werden",
   "details": {
     "intro": {
@@ -7,11 +7,11 @@
     },
     "steps": [
       {
-        "title": "Prozesse Master Node",
+        "title": "Pod erstellen",
         "text": "step1.md"
       },
       {
-        "title": "Prozesse Worker Node",
+        "title": "Pod Details",
         "text": "step2.md"
       }
     ],
