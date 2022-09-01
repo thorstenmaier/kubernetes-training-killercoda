@@ -1,6 +1,6 @@
 {
-  "title": "1 - Kubernetes Architektur",
-  "description": "In diesem Szenario lernen Sie die Architektur von Kubernetes kennen",
+  "title": "Pod Basis",
+  "description": "Erstellen Sie Pods und lernen Sie wie diese kontrolliert werden",
   "details": {
     "intro": {
       "text": "intro.md"

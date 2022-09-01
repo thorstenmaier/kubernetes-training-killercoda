@@ -1,0 +1,25 @@
+{
+  "title": "Kubernetes Architektur",
+  "description": "In diesem Szenario lernen Sie die Architektur von Kubernetes kennen",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Prozesse Master Node",
+        "text": "step1.md"
+      },
+      {
+        "title": "Prozesse Worker Node",
+        "text": "step2.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
