@@ -11,8 +11,12 @@
         "text": "step1.md"
       },
       {
-        "title": "Pod Details",
+        "title": "Pod Details auslesen",
         "text": "step2.md"
+      },
+      {
+        "title": "Befehl im Container eines Pods ausführen",
+        "text": "step3.md"
       }
     ],
     "finish": {
