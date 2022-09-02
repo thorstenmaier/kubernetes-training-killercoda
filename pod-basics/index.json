@@ -17,6 +17,10 @@
       {
         "title": "Befehl im Container eines Pods ausführen",
         "text": "step3.md"
+      },
+      {
+        "title": "Aufräumen",
+        "text": "step4.md"
       }
     ],
     "finish": {
