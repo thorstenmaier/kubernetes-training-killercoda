@@ -90,4 +90,17 @@ sudo apt-get install bellsoft-java17
 
 {{TRAFFIC_HOST1_8080}}
 
+`nano Dockerfile`{{exec}}
+
+```
+FROM bellsoft/liberica-openjre-alpine:17
+EXPOSE 8080
+ADD target/*.jar app.jar
+ENTRYPOINT ["java","-jar","/app.jar"]
+```{{copy}}
+
+`docker build -t my-app .`{{exec}}
+
+`docker run -p 8080:8080 --image-pull-policy=Never my-app:latest`{{exec}}
+
 `./mvnw spring-boot:build-image`{{exec}}
