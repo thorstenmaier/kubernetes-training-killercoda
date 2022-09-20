@@ -1,0 +1,29 @@
+{
+  "title": "YAML Basics",
+  "description": "Erstelle YAML-Dateien und wende diese im Cluster an",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "YAML erstellen",
+        "text": "step1.md"
+      },
+      {
+        "title": "YAML im Cluster anwenden",
+        "text": "step2.md"
+      },
+      {
+        "title": "Aufräumen",
+        "text": "step3.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  }
+}
