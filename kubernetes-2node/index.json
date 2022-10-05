@@ -1,6 +1,6 @@
 {
-  "title": "Kubernetes 1node",
-  "description": "One node Kubernetes cluster",
+  "title": "Kubernetes 2node",
+  "description": "A two node Kubernetes cluster",
   "details": {
     "intro": {
       "text": "intro.md"
@@ -11,6 +11,6 @@
     }
   },
   "backend": {
-    "imageid": "kubernetes-kubeadm-1node"
+    "imageid": "kubernetes-kubeadm-2nodes"
   }
 }

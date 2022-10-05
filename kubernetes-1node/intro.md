@@ -1,8 +1,8 @@
 
 <br>
 
-### Welcome !
+### Welcome!
 
-In this scenario we'll learn how to update the `apt` repository.
+A one node Kubernetes playground.
 
 **HAVE FUN**
