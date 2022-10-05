@@ -10,4 +10,6 @@ Möchten wir den laufenden Pod über den Browser aufrufen, können wir dies mit 
 
 `kubectl port-forward --address 0.0.0.0 my-nginx 80:80`
 
-Auch hier wird der laufende Prozess mit `CTRL-C` beendet.
+Über das Burger-Menü (drei kleine waagrechte Striche) am direkt unter dem Logout-Button gelangen wir ins Menü "Traffic / Ports". Dort können wir dem Link zum Port 80 folgen und sollten den laufenden nginx-Server sehen.
+
+Anschließend beenden wir den laufende Port-Forward-Prozess mit `CTRL-C`.
